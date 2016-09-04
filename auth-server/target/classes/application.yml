@@ -1,0 +1,14 @@
+server:
+  port: 9999
+  
+spring:
+  config:
+    name: auth-server
+    
+security:
+  oauth2:
+    client:
+      client-id: myapp
+      client-secret: myappsecret
+      scope: read, write, server       
+      auto-approve-scopes: '.*'
